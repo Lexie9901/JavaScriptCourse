@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        document.write("Odd and Even numbers <br>")
+
+        for(number=0; number<11; number++){
+            if(number%2 === 0){
+                document.write( +number+ "is an even number <br>" )
+            }
+            else{
+                document.write( +number+ "is an odd number <br>")
+            }
+         }
+
+         document.write("<br> <br> Number between 5 and 20 <br>")
+
+         var myNum = prompt("Please enter a number between 5 and 20");
+         var count = 1;
+
+         do{
+            document.write("Counting:" + " " + count + "<br>" )
+            count++;
+         }
+         while(count <= myNum)
+
+         document.write("<br> <br> Array <br>")
+
+         var subjects = ["Accounting", "Algebra", "Programming", "Art", "Data Analytics"];
+
+         document.write("Subjects: <br>");
+         subjects.forEach(ele);
+
+         function ele(value){
+            document.write(value+ "<br>");
+         }
+
+    </script>
+</body>
+</html>
